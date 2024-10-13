@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",  // 編譯後的可執行檔
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",  // 或 "gdb"
+            "preLaunchTask": "C/C++: clang 建置使用中檔案",  // 編譯任務名稱
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "text": "settings set target.print-object true"
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/lldb",  // 或使用 "/usr/bin/gdb"
+        }
+    ]
+}
