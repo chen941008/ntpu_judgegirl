@@ -7,7 +7,6 @@ int main() {
     int ans;
     scanf("%d", &n);
     int* a = (int*)malloc(n * sizeof(int));
-
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }

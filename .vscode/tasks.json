@@ -11,7 +11,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/program"
             ],
             "group": "build",
             "problemMatcher": [
@@ -28,7 +28,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/program"
             ],
             "options": {
                 "cwd": "${fileDirname}"
